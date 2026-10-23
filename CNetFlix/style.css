@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Tai+Heritage+Pro:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  background-image: url("assests/images/Netflixe_bg.jpg");
+  height: 90vh;
+  position: relative;
+}
+
+.main .box {
+  height: 90vh;
+  width: 100%;
+  background-color: black;
+  opacity: 0.69;
+  position: absolute;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  max-width: 65vw;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.logo {
+  width: 135px;
+  margin-top: 25px;
+  z-index: 5;
+  position: relative;
+}
+
+.btnup {
+  z-index: 5;
+}
+.hero {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  padding: 25px;
+}
+
+.hero span:first-child {
+  font-weight: bolder;
+  font-size: 48px;
+  word-spacing: 3.5px;
+  font-family: "Martel Sans", sans-serif;
+  text-align: center;
+}
+
+.hero span:nth-child(2) {
+  font-size: 400;
+  font-size: 24px;
+  margin-bottom: 22px;
+   text-align: center;
+}
+
+.hero span:nth-child(3) {
+  font-size: 400;
+  font-size: 15px;
+   text-align: center;
+}
+
+.tags {
+  display: flex;
+  gap: 7px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+body {
+  background:
+    radial-gradient(
+      50% 500% at 50% -420%,
+      rgba(64, 97, 231, 0.4) 80%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    black;
+}
+
+.btn{
+
+  background-color: black;
+  color: white;
+  padding: 7px;
+  width: 8vw;
+  text-align: center;
+  font-size: 16px;
+  
+
+}
+.red-sm{
+  background-color: #BC0202;
+  color: white;
+  padding: 7px;
+  width: 6vw;
+  text-align: center;
+  font-size: 16px;
+  border-radius:3px;
+  margin-left: 10px;
+  border: none;
+
+}
+
+.down{
+  
+  background-color: black;
+  color: white;
+  padding: 7px;
+  width: 24vw;
+  text-align:left;
+  font-size: 16px;
+  height: 6vh;
+  border: solid 0.1px whitesmoke;
+}
+
+.red{
+   background-color: #BC0202;
+  color: white;
+  padding: 7px;
+  width: 13vw;
+  font-size: 16px;
+  text-align: center;
+  border-radius:3px;
+  margin-left: 10px;
+  border: none;
+  height: 8vh;
+  word-spacing: 3px;
+  
+}
+
+.faqbox1{
+   background-color: rgb(49, 46, 46);
+  display: flex;
+  justify-content: space-between;
+  padding:35px;
+  max-width: 80%;
+  height: 4vh;
+  color: white;
+  font-size: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: all 1s ease-out;
+}
+
+.faq{
+  margin-top: 60px;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+
+}
+
+.faqbox1:hover{
+  background-color: rgb(122, 119, 119);
+}
+
+.last p{
+  color: white;
+  text-align: center;
+
+}
+
+.last .down{
+  width:40vw ;
+  height: 3vh;
+}
+
+.last .red{
+  height: 6vh;
+
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    nav{
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 305px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item{
+        align-items: center;
+    }
+ 
+
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
